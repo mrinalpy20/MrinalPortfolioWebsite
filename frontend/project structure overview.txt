@@ -1,0 +1,33 @@
+portfolio-website/
+│── public/               # Static files (favicon, robots.txt, etc.)
+│── src/                  # Main source code
+│   ├── assets/           # Images, fonts, icons, etc.
+│   ├── components/       # Reusable UI components
+│   │   ├── Navbar.jsx    # Navigation Bar
+│   │   ├── Footer.jsx    # Footer
+│   │   ├── Button.jsx    # Custom Button component
+│   │   ├── ProjectCard.jsx # Project showcase component
+│   │   ├── ...           # Other UI components
+│   ├── pages/            # Main pages of the website
+│   │   ├── Home.jsx      # Landing page
+│   │   ├── About.jsx     # About Me section
+│   │   ├── Projects.jsx  # Projects page
+│   │   ├── Contact.jsx   # Contact page
+│   │   ├── Resume.jsx    # Resume page (optional)
+│   │   ├── NotFound.jsx  # 404 Page
+│   ├── hooks/            # Custom React hooks (if needed)
+│   │   ├── useTheme.js   # Example: Dark/Light theme toggle
+│   ├── context/          # Context API for global state management
+│   │   ├── ThemeContext.js # Example: Theme state
+│   ├── utils/            # Utility functions (formatting, API helpers, etc.)
+│   │   ├── fetchProjects.js # Fetch project data
+│   ├── styles/           # Global and component-level styles
+│   │   ├── index.css     # Global styles
+│   │   ├── Home.module.css # CSS Module for Home page
+│   │   ├── ...           # Other styles
+│   ├── App.js            # Main App component (Routes setup)
+│   ├── index.js          # ReactDOM rendering point
+│   ├── router.js         # Centralized routing (if using react-router)
+│── .gitignore            # Git ignore file
+│── package.json          # Dependencies and scripts
+│── README.md             # Documentation for your project
