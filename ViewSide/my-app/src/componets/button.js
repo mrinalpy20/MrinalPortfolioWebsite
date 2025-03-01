@@ -4,8 +4,8 @@ import ".././output.css";
 function Button(props) {
   return (
     <button
-      className={`h-[6vh]  ${
-        props.width || "w-[8vw]"
+      className={`text-lg font-medium h-[50px]  ${
+        props.width || "w-[154px]"
       } rounded-xl flex justify-center items-center ${props.color} mt-${
         props.mt
       } cursor-pointer`}

@@ -11,3 +11,14 @@ body {
 body {
     @apply bg-black text-white; /* Background black & text white */
 }
+
+html,
+body {
+    width: 92%;
+    height: 92%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

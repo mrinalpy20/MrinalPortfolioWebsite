@@ -10,7 +10,7 @@ function DescText(props) {
       className="relative flex flex-col "
     >
       <div
-        className={`${props.textSize || "text-lg"} ${
+        className={`${props.textSize || "text-xl"} ${
           props.textColor || "text-[#d9d9d9]"
         } ${
           props.textAlign || "text-center"

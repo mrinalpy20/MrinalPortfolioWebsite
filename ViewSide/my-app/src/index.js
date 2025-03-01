@@ -4,15 +4,17 @@ import "./index.css";
 // import App from "./App";
 import Intro from "./componets/intro";
 import Aboutme from "./pages/Aboutme";
+import Work from "./pages/Work";
 import reportWebVitals from "./reportWebVitals";
 import "./output.css";
-
+import Profile from "./componets/pofile";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.Fragment>
     <div className="inline-flex">
       <Intro />
-      <Aboutme />
+
+      <Work />
     </div>
   </React.Fragment>
 );
