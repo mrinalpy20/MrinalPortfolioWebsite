@@ -1,31 +1,34 @@
+// Navbar.js
 import React, { useState } from "react";
 import ".././output.css";
+import { Home, FolderInput, Wrench, Briefcase, Star, Mail } from "lucide-react";
 
-function Navbar() {
-  const [active, setActive] = useState("home");
+function Navbar({ setCurrentPage }) {
+  const [activeIndex, setActiveIndex] = useState(null);
 
-  const navItems = [
-    { id: "home", icon: "fa-home", link: "#" },
-    { id: "projects", icon: "fa-folder", link: "#" },
-    { id: "tools", icon: "fa-wrench", link: "#" },
-    { id: "work", icon: "fa-briefcase", link: "#" },
-    { id: "blog", icon: "fa-edit", link: "#" },
-    { id: "contact", icon: "fa-envelope", link: "#" },
+  const icons = [
+    { icon: <Home />, page: "Aboutme" },
+    { icon: <FolderInput />, page: "Work" },
+    { icon: <Wrench />, page: "Tools" },
+    { icon: <Briefcase />, page: "Testimonial" },
+    { icon: <Star />, page: "Talk" },
   ];
 
   return (
-    <div className="bg-[#272829] w-fit mx-auto p-2 rounded-xl flex gap-6">
-      {navItems.map((item) => (
-        <a
-          key={item.id}
-          href={item.link}
-          className={`w-12 h-12 flex items-center justify-center rounded-lg ${
-            active === item.id ? "bg-[#914bf1] text-white" : "text-white"
-          }`}
-          onClick={() => setActive(item.id)}
+    <div className="w-[55px] h-[350px] mt-[70px] ml-[100px] flex flex-col items-center justify-evenly bg-[#272829] rounded-xl">
+      {icons.map((item, index) => (
+        <button
+          key={index}
+          onClick={() => {
+            setActiveIndex(index);
+            setCurrentPage(item.page);
+          }}
+          className={`w-9 h-9 flex items-center justify-center transition-colors rounded-md ${
+            activeIndex === index ? "bg-purple-500" : "bg-transparent"
+          } hover:bg-purple-500`}
         >
-          <i className={`fas ${item.icon} text-xl`}></i>
-        </a>
+          <div className="w-6 h-6 text-white">{item.icon}</div>
+        </button>
       ))}
     </div>
   );

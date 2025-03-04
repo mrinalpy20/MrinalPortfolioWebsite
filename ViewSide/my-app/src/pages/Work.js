@@ -9,7 +9,7 @@ import Retire from "../Assets/Images/Retire.jpg";
 
 function Work(props) {
   return (
-    <div className="  w-[705px] h-[450px] ml-[96px] mt-[60px] flex flex-col">
+    <div className="  w-[705px] h-[450px] ml-[40px] mt-[50px] flex flex-col">
       <SubHeaderText
         position="left"
         textsize="3.5rem" /* Adjusted for proportion */
@@ -22,15 +22,15 @@ function Work(props) {
         lineheight="h-[8px]"
         fontWeight="500"
       />
-      <div className="h-10"></div>
+      <div className="h-[5%]"></div>
 
-      <div className="flex flex-rows mt-5">
+      <div className="h-[60%] flex flex-rows mt-5">
         <ProjectBox
           image={Natous}
           text="MEPN stack travel booking website"
           heading="Natours"
         />
-        <div className="w-5"></div>
+        <div className="w-[5%]"></div>
         <ProjectBox
           image={Retire}
           text="Retirement Planning App"
@@ -38,13 +38,13 @@ function Work(props) {
         />
       </div>
       {/* <div className="h-1"></div> */}
-      <div className="flex flex-rows">
+      <div className="h-[60%] flex flex-rows mt-[3%]">
         <ProjectBox
           image={Heartify}
           text="ML Based Heart Health App"
           heading="Heartify"
         />
-        <div className="w-5"></div>
+        <div className="w-[5%]"></div>
         <ProjectBox
           image={Heartify}
           text="MEPN stack travel booking website"

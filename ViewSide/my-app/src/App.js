@@ -1,10 +1,13 @@
 // App.js
+// App.js
 import React, { useState } from "react";
 import Aboutme from "./pages/Aboutme";
 import Work from "./pages/Work";
 import Tools from "./pages/tools";
 import Testimonial from "./pages/testimonial";
 import TalkCard from "./componets/letstalk";
+import Navbar from "./componets/Navbar";
+import Talk from "./pages/Talk";
 
 const App = () => {
   const [currentPage, setCurrentPage] = useState("Aboutme");
@@ -19,8 +22,8 @@ const App = () => {
         return <Tools />;
       case "Testimonial":
         return <Testimonial />;
-      case "TalkCard":
-        return <TalkCard />;
+      case "Talk":
+        return <Talk />;
       default:
         return <Aboutme />;
     }
@@ -29,25 +32,8 @@ const App = () => {
   return (
     <div className="relative flex h-screen">
       <div className="flex-1 p-4">{renderPage()}</div>
-
-      <div className="fixed top-0 right-0 h-full flex flex-col space-y-2 p-4">
-        {[
-          { label: "About Me", page: "Aboutme" },
-          { label: "Work", page: "Work" },
-          { label: "Tools", page: "Tools" },
-          { label: "Testimonial", page: "Testimonial" },
-          { label: "TalkCard", page: "TalkCard" },
-        ].map((item) => (
-          <button
-            key={item.page}
-            onClick={() => setCurrentPage(item.page)}
-            className={`w-2 h-10 bg-gray-400 hover:bg-blue-500 transition-colors ${
-              currentPage === item.page ? "bg-blue-500" : ""
-            }`}
-          >
-            <span className="sr-only">{item.label}</span>
-          </button>
-        ))}
+      <div className="mt-[15%]">
+        <Navbar setCurrentPage={setCurrentPage} />
       </div>
     </div>
   );

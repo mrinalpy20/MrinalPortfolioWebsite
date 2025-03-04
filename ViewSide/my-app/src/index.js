@@ -10,8 +10,10 @@ import "./output.css";
 import Profile from "./componets/pofile";
 import Tools from "./pages/tools";
 import Testimonial from "./pages/testimonial";
+import Navbar from "./componets/Navbar";
 // import TestCard from "./componets/testcard";
 import TalkCard from "./componets/letstalk";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.Fragment>

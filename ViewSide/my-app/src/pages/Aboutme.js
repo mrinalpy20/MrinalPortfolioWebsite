@@ -9,22 +9,22 @@ import M from "../Assets/Logos/union.png";
 
 function Aboutme(props) {
   return (
-    <div className="w-[705px] h-[450px] ml-[96px] mt-[65px] flex flex-col">
+    <div className="w-[705px] h-[450px] ml-[40px] mt-[45px] flex flex-col">
       <div>
         <HeaderText
           w="90%"
           h="35%"
-          textsize="5.5rem"
+          textsize="5rem"
           position="left"
           line1="SOFTWARE"
           line2="ENGINEER"
           lastColor="#914bf1"
           marginTop="20px"
-          lineheight="h-[25px]"
+          lineheight="h-[20px]"
         />
       </div>
-      <div className="h-[5%]"></div>
-      <div className="mt-[6%]">
+      <div className="h-[7%]"></div>
+      <div className="mt-[8%]">
         <DescText
           text="Passionate about creating intuitive and engaging user applications. Specialize in transforming ideas into beautifully crafted products."
           w="100%"
@@ -32,12 +32,12 @@ function Aboutme(props) {
           textSize="text-xl"
         />
       </div>
-      <div className="flex flex-row mt-[3%]">
+      <div className="flex flex-row mt-[5%]">
         <div>
           <HeaderText
             w="30%"
             h="40%"
-            textsize="5rem"
+            textsize="4.5rem"
             position="left"
             line1="+3"
             lastColor="#00000"
@@ -50,7 +50,7 @@ function Aboutme(props) {
           <HeaderText
             w="30%"
             h="40%"
-            textsize="5rem"
+            textsize="4.5rem"
             position="left"
             line1="+6"
             lastColor="#00000"
@@ -60,7 +60,7 @@ function Aboutme(props) {
           <DescText text="PROJECTS COMPLETED" w="50%" textAlign="left" />
         </div>
         <div>
-          <div class="w-[30%] h-[50%] text-white text-4xl font-semibold font-['Outfit'] leading-none mt-2">
+          <div class="w-[30%] h-[50%] text-white text-3xl font-semibold font-['Outfit'] leading-none mt-2">
             B.Tech ECE
           </div>
           <div className="h-3"></div>

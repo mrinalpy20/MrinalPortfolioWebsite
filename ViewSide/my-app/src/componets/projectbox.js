@@ -4,7 +4,7 @@ import DescText from "./description_text";
 
 function ProjectBox(props) {
   return (
-    <div className="w-[82%] h-[95%] relative bg-[#2c2d2f] rounded-[20px] overflow-hidden group">
+    <div className="w-[75%] h-[100%] relative bg-[#2c2d2f] rounded-[20px] overflow-hidden group">
       {/* Image Container with Zoom Effect */}
       <div className="h-[69%] w-[100%] overflow-hidden">
         <img
@@ -14,7 +14,7 @@ function ProjectBox(props) {
         />
       </div>
 
-      <div className="h-[31%] flex flex-col">
+      <div className="h-[29%] flex flex-col">
         {/* Heading with Hover Color Change */}
         <div className="w-[100%] h-[30%] text-white text-[1.45rem] font-medium font-['Outfit'] leading-10 ml-3 transition-colors duration-500 ease-out group-hover:text-[#914bf1]">
           {props.heading}

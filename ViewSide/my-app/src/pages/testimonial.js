@@ -5,7 +5,7 @@ import DescText from "../componets/description_text";
 import TestCard from "../componets/testcard";
 function Testimonial(props) {
   return (
-    <div className="  w-[705px] h-[450px] ml-[96px] mt-[65px] flex flex-col">
+    <div className="  w-[705px] h-[450px] ml-[40px] mt-[65px] flex flex-col">
       <SubHeaderText
         position="left"
         textsize="3.5rem" /* Adjusted for proportion */
