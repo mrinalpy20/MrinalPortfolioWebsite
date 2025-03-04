@@ -9,12 +9,12 @@ import M from "../Assets/Logos/union.png";
 
 function Aboutme(props) {
   return (
-    <div className="w-[805px] h-[770px] ml-[96px] mt-[65px] grid grid-rows-[3fr_1fr_3fr_1fr_3fr]">
+    <div className="w-[705px] h-[450px] ml-[96px] mt-[65px] flex flex-col">
       <div>
         <HeaderText
-          w="696px"
-          h="57px"
-          textsize="95px"
+          w="90%"
+          h="35%"
+          textsize="5.5rem"
           position="left"
           line1="SOFTWARE"
           line2="ENGINEER"
@@ -23,53 +23,53 @@ function Aboutme(props) {
           lineheight="h-[25px]"
         />
       </div>
-      <div className="h-5"></div>
-      <div>
+      <div className="h-[5%]"></div>
+      <div className="mt-[6%]">
         <DescText
           text="Passionate about creating intuitive and engaging user applications. Specialize in transforming ideas into beautifully crafted products."
-          w="768px"
+          w="100%"
           textAlign="left"
-          textSize="text-2xl"
+          textSize="text-xl"
         />
       </div>
-      <div className="grid grid-cols-[1fr_1fr_1fr]">
+      <div className="flex flex-row mt-[3%]">
         <div>
           <HeaderText
-            w="268px"
-            h="57px"
-            textsize="95px"
+            w="30%"
+            h="40%"
+            textsize="5rem"
             position="left"
             line1="+3"
             lastColor="#00000"
             marginTop="20px"
           />
           <div className="h-3"></div>
-          <DescText text="MONTHS OF EXPERIENCE" w="192px" textAlign="left" />
+          <DescText text="MONTHS OF EXPERIENCE" w="50%" textAlign="left" />
         </div>
         <div>
           <HeaderText
-            w="268px"
-            h="57px"
-            textsize="95px"
+            w="30%"
+            h="40%"
+            textsize="5rem"
             position="left"
             line1="+6"
             lastColor="#00000"
             marginTop="20px"
           />
           <div className="h-3"></div>
-          <DescText text="PROJECTS COMPLETED" w="192px" textAlign="left" />
+          <DescText text="PROJECTS COMPLETED" w="50%" textAlign="left" />
         </div>
         <div>
-          <div class="w-[133px] h-[74px] text-white text-4xl font-semibold font-['Outfit'] leading-none mt-2">
+          <div class="w-[30%] h-[50%] text-white text-4xl font-semibold font-['Outfit'] leading-none mt-2">
             B.Tech ECE
           </div>
           <div className="h-3"></div>
-          <DescText text="NIT SILCHAR 2024" w="134px" textAlign="left" />
+          <DescText text="NIT SILCHAR 2024" w="70%" textAlign="left" />
         </div>
       </div>
       <div className="mt-12 grid grid-cols-[1fr_1fr_1fr_1fr]">
         <div>
-          <Button text="Let's Talk" width="w-[230px]" color="bg-[#914BF1]" />
+          <Button text="Let's Talk" width="w-[210px]" color="bg-[#914BF1]" />
         </div>
         <div>
           <a

@@ -6,7 +6,7 @@ function Button(props) {
     <button
       className={`text-lg font-medium h-[50px]  ${
         props.width || "w-[154px]"
-      } rounded-xl flex justify-center items-center ${props.color} mt-${
+      } rounded-lg flex justify-center items-center ${props.color} mt-${
         props.mt
       } cursor-pointer`}
       onClick={props.onClick} // Calls the function passed via props

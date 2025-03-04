@@ -1,20 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-// import App from "./App";
+import App from "./App";
 import Intro from "./componets/intro";
 import Aboutme from "./pages/Aboutme";
 import Work from "./pages/Work";
 import reportWebVitals from "./reportWebVitals";
 import "./output.css";
 import Profile from "./componets/pofile";
+import Tools from "./pages/tools";
+import Testimonial from "./pages/testimonial";
+// import TestCard from "./componets/testcard";
+import TalkCard from "./componets/letstalk";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.Fragment>
-    <div className="inline-flex">
+    <div className="flex flex-row">
       <Intro />
-
-      <Work />
+      <App />
     </div>
   </React.Fragment>
 );
