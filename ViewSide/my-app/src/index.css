@@ -14,10 +14,8 @@ body {
 
 html,
 body {
-    width: 92%;
-    height: 92%;
     margin: 0;
-    padding: 0;
+    padding: 0px;
     display: flex;
     justify-content: center;
     align-items: center;

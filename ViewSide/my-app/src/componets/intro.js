@@ -1,6 +1,6 @@
 import React from "react";
 import ".././output.css";
-import Profile_Pic from "./profilepic";
+import ProfilePic from "./profilepic";
 import HeaderText from "./headertext";
 import DescText from "./description_text";
 import LogoBar from "./logobar";
@@ -9,15 +9,15 @@ import Button from "./button";
 function Intro() {
   return (
     <React.Fragment>
-      <div className="w-[350px] h-[684px] ml-[150px] mt-[61px] sticky bg-[#303131] rounded-3xl flex flex-col">
+      <div className="w-[320px] h-[644px] ml-[120px] mt-[55px] sticky bg-[#303131] rounded-3xl flex flex-col">
         {/* Profile Picture */}
         <div className="h-[5%]"></div>
         <div className="flex justify-center items-center">
-          <Profile_Pic className="w-[30%] h-[30%]" />
+          <ProfilePic w="w-[75%]" h="w-[75%]" />
         </div>
 
         {/* Name */}
-        <div className="h-[3%]"></div>
+        <div className="h-[5%]"></div>
         <div className="flex justify-center items-center">
           <HeaderText
             position="center"
@@ -34,17 +34,17 @@ function Intro() {
         <div className="flex flex-col items-center gap-2">
           <DescText
             text="Software Engineer & Data Analyst"
-            textSize="text-lg"
+            textSize="text-md"
             width="80%" /* Adjusted to fit within new root width */
           />
-          <DescText text="Guwahati, India" textSize="text-lg" />
+          <DescText text="Guwahati, India" textSize="text-md" />
         </div>
         <div className="h-[2%]"></div>
         {/* Logo Bar */}
         <div className="flex justify-center items-center">
           <LogoBar className="w-[60%] h-auto" />
         </div>
-        <div className="h-[6%]"></div>
+        <div className="h-[8%]"></div>
         {/* Button */}
         <div className="flex justify-center items-center">
           <Button

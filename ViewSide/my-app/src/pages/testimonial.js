@@ -1,17 +1,61 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import ".././output.css";
 import SubHeaderText from "../componets/subHeader";
-import DescText from "../componets/description_text";
 import TestCard from "../componets/testcard";
+
 function Testimonial(props) {
+  const cards = [
+    {
+      text: "Roman Reigns",
+      content:
+        "Working with Mrinal has been a pleasure. His dedication and attention to detail are impressive.",
+    },
+    {
+      text: "John Cena",
+      content:
+        "Mrinal consistently delivers high-quality work, even under tight deadlines. A true professional!",
+    },
+    {
+      text: "Ravi Shastri ",
+      content:
+        "Mrinal's problem-solving skills are exceptional. He always finds effective solutions to complex challenges.",
+    },
+    {
+      text: "Sananath Jaysurya",
+      content:
+        "A reliable team member, Mrinal brings creativity and innovation to every project.",
+    },
+    {
+      text: "Seth Rollins",
+      content:
+        "I appreciate Mrinal's collaborative spirit and his ability to inspire those around him.",
+    },
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Navigate to the previous card
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? cards.length - 1 : prevIndex - 1
+    );
+  };
+
+  // Navigate to the next card
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === cards.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
   return (
-    <div className="  w-[705px] h-[450px] ml-[40px] mt-[65px] flex flex-col">
+    <div className="w-[705px] h-[450px] ml-[40px] mt-[65px] flex flex-col">
       <SubHeaderText
         position="left"
-        textsize="3.5rem" /* Adjusted for proportion */
+        textsize="3.5rem"
         line1="What Colleagues Say"
         line2="About My Work"
-        w="100%" /* Made it relative */
+        w="100%"
         h="auto"
         lastColor="#914bf1"
         marginTop="2px"
@@ -22,7 +66,7 @@ function Testimonial(props) {
       <div className=" h-[10%] flex flex-row justify-end">
         <div className=" w-[7%] flex flex-row justify-evenly">
           <button
-            onClick={props.onPrev}
+            onClick={prevSlide}
             className="w-[87%] h-[100%] bg-[#9a54f1] rounded-full flex items-center justify-center transition-all duration-300 hover:bg-[#914BF1] focus:outline-none"
           >
             <i className="fa-solid fa-arrow-left text-white"></i>
@@ -30,7 +74,7 @@ function Testimonial(props) {
         </div>
         <div className=" w-[7%] flex flex-row justify-evenly">
           <button
-            onClick={props.onNext}
+            onClick={nextSlide}
             className="w-[87%] h-[100%] bg-[#9a54f1] rounded-full flex items-center justify-center transition-all duration-300 hover:bg-[#914BF1] focus:outline-none"
           >
             <i className="fa-solid fa-arrow-right text-white"></i>
@@ -38,7 +82,18 @@ function Testimonial(props) {
         </div>
       </div>
       <div className="h-[5%]"></div>
-      <TestCard />
+      <div className="relative w-[100%] overflow-hidden flex flex-row">
+        <div
+          className="flex flex-row transition-transform duration-1000 ease-in-out gap-0"
+          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+        >
+          {cards.map((card, index) => (
+            <div key={index} className="w-full flex-shrink-0">
+              <TestCard text={card.text} content={card.content} />
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

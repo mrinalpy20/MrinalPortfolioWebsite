@@ -2,9 +2,11 @@ import React from "react";
 import ".././output.css";
 import profilePic from ".././Assets/Images/profile.jpg";
 
-function Profile_Pic() {
+function ProfilePic(props) {
   return (
-    <div className="w-[255px] h-[320px]  rounded-3xl flex justify-center items-center overflow-hidden">
+    <div
+      className={`${props.w} ${props.h}  rounded-3xl flex justify-center items-center overflow-hidden`}
+    >
       <img
         src={profilePic}
         alt="Profile Pic"
@@ -14,4 +16,4 @@ function Profile_Pic() {
   );
 }
 
-export default Profile_Pic;
+export default ProfilePic;

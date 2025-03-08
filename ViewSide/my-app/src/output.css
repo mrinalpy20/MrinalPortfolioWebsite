@@ -1,4 +1,6 @@
-*, ::before, ::after {
+*,
+::before,
+::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -128,9 +130,31 @@
   /* 2 */
 }
 
+/* .test-card {
+  transition:
+    opacity 0.5s,
+    transform 0.5s;
+
+  z-index: 0;
+}
+
+.test-card.active {
+  opacity: 1;
+  transform: translateX(0);
+  z-index: 1;
+}
+
+.test-card.hide-left {
+  transform: translateX(-100%);
+}
+
+.test-card.hide-right {
+  transform: translateX(100%);
+} */
+
 ::before,
 ::after {
-  --tw-content: '';
+  --tw-content: "";
 }
 
 /*
@@ -152,7 +176,8 @@ html,
   /* 3 */
   tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -195,7 +220,7 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 
 abbr:where([title]) {
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 /*
@@ -342,9 +367,9 @@ select {
 */
 
 button,
-input:where([type='button']),
-input:where([type='reset']),
-input:where([type='submit']) {
+input:where([type="button"]),
+input:where([type="reset"]),
+input:where([type="submit"]) {
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -391,7 +416,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 2. Correct the outline style in Safari.
 */
 
-[type='search'] {
+[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -570,7 +595,7 @@ video {
 }
 
 .top-\[3\.60px\] {
-  top: 3.60px;
+  top: 3.6px;
 }
 
 .h-11 {
@@ -582,11 +607,11 @@ video {
 }
 
 .h-\[12\.80px\] {
-  height: 12.80px;
+  height: 12.8px;
 }
 
 .h-\[16\.80px\] {
-  height: 16.80px;
+  height: 16.8px;
 }
 
 .w-\[159px\] {
@@ -615,7 +640,7 @@ video {
 }
 
 .font-\[\'Outfit\'\] {
-  font-family: 'Outfit';
+  font-family: "Outfit";
 }
 
 .text-sm {

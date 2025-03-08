@@ -5,7 +5,7 @@ import DescText from "../componets/description_text";
 
 function TestCard(props) {
   return (
-    <div className="  w-[705px] h-[240px]  flex flex-col bg-[#2c2d2f] rounded-xl  overflow-hidden">
+    <div className="test-card  w-[705px] h-[240px]  flex flex-col bg-[#2c2d2f] rounded-xl  overflow-hidden">
       <div className=" h-[7%]"></div>
       <div className="  h-[35%] flex flex-row">
         <div className="w-[3%]"></div>
@@ -20,16 +20,16 @@ function TestCard(props) {
         </div>
         <div className="w-[2%]"></div>
         <div class="w-[40%] text-white text-2xl font-medium font-['Outfit'] leading-7 flex items-center justify-left">
-          William M.
+          {props.text}
         </div>
       </div>
       <div className="ml-[3%] mt-[4%]">
         <DescText
           w="90%"
-          text="Mrinal expertly blends design with functionality, transforming our product into 
-a sleek, user-friendly experience that our customers love!"
+          text={props.content}
           textAlign="left"
           textSize="text-xl"
+          lh="leading-snug"
         />
       </div>
     </div>

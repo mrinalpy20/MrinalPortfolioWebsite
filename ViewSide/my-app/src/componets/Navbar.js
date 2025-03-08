@@ -1,5 +1,4 @@
-// Navbar.js
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import ".././output.css";
 import { Home, FolderInput, Wrench, Briefcase, Star, Mail } from "lucide-react";
 
@@ -7,15 +6,16 @@ function Navbar({ setCurrentPage }) {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const icons = [
-    { icon: <Home />, page: "Aboutme" },
-    { icon: <FolderInput />, page: "Work" },
-    { icon: <Wrench />, page: "Tools" },
-    { icon: <Briefcase />, page: "Testimonial" },
-    { icon: <Star />, page: "Talk" },
+    { icon: <Home />, page: "aboutme" },
+    { icon: <FolderInput />, page: "work" },
+    { icon: <Wrench />, page: "tools" },
+    { icon: <Briefcase />, page: "profile" },
+    { icon: <Star />, page: "testimonial" },
+    { icon: <Mail />, page: "talk" },
   ];
 
   return (
-    <div className="w-[55px] h-[350px] mt-[70px] ml-[100px] flex flex-col items-center justify-evenly bg-[#272829] rounded-xl">
+    <div className="w-[55px] h-[350px] mt-[170px] ml-[0px] flex flex-col items-center justify-evenly bg-[#272829] rounded-xl opacity-80">
       {icons.map((item, index) => (
         <button
           key={index}

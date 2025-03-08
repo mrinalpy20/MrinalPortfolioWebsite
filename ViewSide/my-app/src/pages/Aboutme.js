@@ -72,18 +72,18 @@ function Aboutme(props) {
           <Button text="Let's Talk" width="w-[210px]" color="bg-[#914BF1]" />
         </div>
         <div>
-          <a
-            href="https://yourportfolio.com"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={() => {
+              props.mywork("work");
+            }}
           >
-            <div className="w-[130px] h-11 bg-black rounded-lg flex items-center justify-center gap-2 overflow-hidden px-3 group transition-colors duration-300">
+            <div className="w-[130px] h-11 opacity-100 rounded-lg flex items-center justify-center gap-2 overflow-hidden px-3 group transition-colors duration-300">
               <span className="text-white text-base font-medium font-['Outfit'] leading-tight mt-2 text-lg">
                 My Work
               </span>
               <i className="fa-solid fa-arrow-right text-white text-lg mt-2.5 group-hover:text-[#914BF1] transition-colors duration-300"></i>
             </div>
-          </a>
+          </button>
         </div>
       </div>
       <div className="pt-[100px]">

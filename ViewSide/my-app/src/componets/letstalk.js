@@ -57,7 +57,7 @@ function TalkCard(props) {
         <DescText
           w="90%"
           text="Unlock the potential of your product with expert design and development services. Let’s collaborate to create user-centered solutions that not only meet your goals but also delight your users."
-          textAlign="left"
+          textAlign="text-left"
           textSize="text-xl"
           lh="leading-med"
         />

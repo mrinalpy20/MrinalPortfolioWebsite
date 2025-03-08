@@ -8,9 +8,10 @@ import figma from "../Assets/Logos/figma.png";
 import powerbi from "../Assets/Logos/powerbi.png";
 import reactlogo from "../Assets/Logos/reactlogo.png";
 import mongodblogo from "../Assets/Logos/mongodb.png";
+
 function Tools(props) {
   return (
-    <div className=" w-[705px] h-[450px] ml-[40px] mt-[65px] flex flex-col">
+    <div className=" w-[705px] h-[450px] ml-[40px] mt-[55px] flex flex-col">
       <SubHeaderText
         position="left"
         textsize="3.5rem" /* Adjusted for proportion */
