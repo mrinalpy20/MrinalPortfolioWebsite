@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c7a685b1.css",
+    "main.js": "/static/js/main.1d2347fe.js",
+    "static/media/Frame2.png": "/static/media/Frame2.101894f19d9954fdfe04.png",
+    "static/media/Dashboard.png": "/static/media/Dashboard.0c8791de9ed490025031.png",
+    "static/media/image.jpg": "/static/media/image.826730db91499f0b9e38.jpg",
+    "static/media/Behance.png": "/static/media/Behance.fec8e0b7e0eca446ed18.png",
+    "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
+    "static/media/Natours.jpg": "/static/media/Natours.b8bbc886e14a47552a8e.jpg",
+    "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.1815e00441357e01619e.ttf",
+    "static/media/mongodb.png": "/static/media/mongodb.5f5ded3962ec0378cfe0.png",
+    "static/media/nodejs.png": "/static/media/nodejs.73c95179cab13af6369a.png",
+    "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.2463b90d9a316e4e5294.woff2",
+    "static/media/Analytics.jpg": "/static/media/Analytics.f3b69778185f4e59dbec.jpg",
+    "static/media/Heartify.jpg": "/static/media/Heartify.d12fa55c4af2a13d75c2.jpg",
+    "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.c210719e60948b211a12.woff2",
+    "static/media/Retire.jpg": "/static/media/Retire.20eba14ee474786c512e.jpg",
+    "static/media/python.png": "/static/media/python.46d85420f48f94d14019.png",
+    "static/media/profile.jpg": "/static/media/profile.e2ed8128ec7350b94c8d.jpg",
+    "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.914997e1bdfc990d0897.ttf",
+    "static/media/CodeStudio.jpg": "/static/media/CodeStudio.8ae493173671b6051269.jpg",
+    "static/media/SSO.jpg": "/static/media/SSO.7be67f617c8ee21ffd17.jpg",
+    "static/media/reactlogo.png": "/static/media/reactlogo.b07fea75a9edd29cb7a4.png",
+    "static/media/pubmedcli.png": "/static/media/pubmedcli.932b92fe48886cd6d8d8.png",
+    "static/media/Leetcode.jpg": "/static/media/Leetcode.77e32dbf9d7e8c73f106.jpg",
+    "static/media/figma.png": "/static/media/figma.7c5beeff0b0620c5f5e2.png",
+    "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.89999bdf5d835c012025.woff2",
+    "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
+    "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
+    "index.html": "/index.html",
+    "main.c7a685b1.css.map": "/static/css/main.c7a685b1.css.map",
+    "main.1d2347fe.js.map": "/static/js/main.1d2347fe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c7a685b1.css",
+    "static/js/main.1d2347fe.js"
+  ]
+}
