@@ -14,8 +14,12 @@ function ToolCard(props) {
       </div>
 
       <div className="w-[60%] h-full flex flex-col">
-        <div className="w-full h-full relative flex items-center justify-center flex-col">
-          <div className="w-full h-[35.8%] text-white text-2xl font-medium font-['Outfit'] leading-none pt-3">
+        <div className="w-full h-full flex items-center justify-center flex-col">
+          <div
+            className={`w-full h-[35.8%] text-white ${
+              props.text || "text-2xl"
+            } font-medium font-['Outfit'] leading-none pt-3`}
+          >
             {props.name}
           </div>
 

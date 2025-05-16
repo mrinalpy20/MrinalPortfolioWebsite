@@ -3,7 +3,7 @@ import ".././output.css";
 import SubHeaderText from "../componets/subHeader";
 import DescText from "../componets/description_text";
 import ProjectBox from "../componets/projectbox";
-import Dribbble from "../Assets/Images/Dribbble.jpg";
+import Behance from "../Assets/Images/Behance.png";
 import Leetcode from "../Assets/Images/Leetcode.jpg";
 import CodeStudio from "../Assets/Images/CodeStudio.jpg";
 import Analytics from "../Assets/Images/Analytics.jpg";
@@ -26,15 +26,35 @@ function Profile(props) {
       <div className="h-10"></div>
 
       <div className="flex flex-rows mt-5">
-        <ProjectBox image={Dribbble} text=" " heading="UI/UX Designs" />
+        <ProjectBox
+          image={Behance}
+          text=" "
+          heading="UI/UX Designs"
+          url="https://www.behance.net/mrinalkalita1"
+        />
         <div className="w-[5%]"></div>
-        <ProjectBox image={Leetcode} text="  " heading="Leetcode" />
+        <ProjectBox
+          image={Leetcode}
+          text="  "
+          heading="Leetcode"
+          url="https://leetcode.com/u/mrinal_98/"
+        />
       </div>
       {/* <div className="h-1"></div> */}
       <div className="flex flex-rows mt-[3%]">
-        <ProjectBox image={CodeStudio} text=" " heading="Code Studio" />
+        <ProjectBox
+          image={CodeStudio}
+          text=" "
+          heading="Code Studio"
+          url="https://www.naukri.com/code360/profile/Mrinalpy20"
+        />
         <div className="w-[5%]"></div>
-        <ProjectBox image={Analytics} text="   " heading="Analytics" />
+        <ProjectBox
+          image={Analytics}
+          text="   "
+          heading="Analytics"
+          url="https://github.com/mrinalpy20/Analytics"
+        />
       </div>
     </div>
   );

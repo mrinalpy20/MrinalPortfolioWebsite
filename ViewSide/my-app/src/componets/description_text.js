@@ -3,19 +3,13 @@ import ".././output.css";
 
 function DescText(props) {
   return (
-    <div
-      style={{
-        width: props.w || "300px",
-        // Default width
-      }}
-      className="relative flex flex-col "
-    >
+    <div className={`flex flex-col w-full max-w-[${props.w || "300px"}]`}>
       <div
-        className={`${props.textSize || "text-xl"} ${
-          props.textColor || "text-[#d9d9d9]"
-        } ${props.textAlign || "text-center"} font-normal font-outfit ${
-          props.lh || "leading-none"
-        }`}
+        className={`${props.textSize || "text-xl"} 
+                    ${props.textColor || "text-[#d9d9d9]"} 
+                    ${props.textAlign || "text-center"} 
+                    ${props.lh || "leading-none"} 
+                    font-normal font-outfit`}
       >
         {props.text}
       </div>

@@ -15,7 +15,7 @@ function Navbar({ setCurrentPage }) {
   ];
 
   return (
-    <div className="w-[55px] h-[350px] mt-[170px] ml-[0px] flex flex-col items-center justify-evenly bg-[#272829] rounded-xl opacity-80">
+    <div className="w-[55px] h-[350px] mt-[170px]  flex flex-col items-center justify-evenly bg-[#272829aa] rounded-xl opacity-90">
       {icons.map((item, index) => (
         <button
           key={index}

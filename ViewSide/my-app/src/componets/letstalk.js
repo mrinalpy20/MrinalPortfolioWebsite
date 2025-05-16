@@ -23,7 +23,9 @@ function TalkCard(props) {
     <div
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="w-[705px] h-[280px] mt-[36px]  flex flex-col bg-[#2c2d2f] rounded-xl overflow-hidden transition-all duration-500 ease-in-out group hover:bg-[#914bf1]"
+      className={`${
+        props.w || "w-[705px]"
+      } h-[280px] mt-[36px]  flex flex-col bg-[#2c2d2f] rounded-xl overflow-hidden transition-all duration-500 ease-in-out group hover:bg-[#914bf1]`}
     >
       <div className="h-[7%]"></div>
       <div className="h-[45%] flex flex-row">

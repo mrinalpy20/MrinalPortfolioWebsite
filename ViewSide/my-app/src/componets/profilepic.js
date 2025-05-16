@@ -1,6 +1,6 @@
 import React from "react";
 import ".././output.css";
-import profilePic from ".././Assets/Images/profile.jpg";
+import Frame2 from ".././Assets/Images/Frame2.png";
 
 function ProfilePic(props) {
   return (
@@ -8,7 +8,7 @@ function ProfilePic(props) {
       className={`${props.w} ${props.h}  rounded-3xl flex justify-center items-center overflow-hidden`}
     >
       <img
-        src={profilePic}
+        src={Frame2}
         alt="Profile Pic"
         className="w-full h-full object-cover rounded-3xl"
       />

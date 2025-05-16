@@ -1,75 +1,27 @@
-// App.jsx
-import React, { useState } from "react";
+// App.jsx or Index.jsx
+import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import Intro from "./componets/intro";
-import Aboutme from "./pages/Aboutme";
-import Work from "./pages/Work";
-import Tools from "./pages/tools";
-import Testimonial from "./pages/testimonial";
-import Navbar from "./componets/Navbar";
-import Talk from "./pages/Talk";
-import Footer from "./pages/footer";
-import Bgimage from "./Assets/Images/image.jpg";
-import Profile from "./componets/pofile";
+import Test from "./Mobile"; // Mobile view
+import App from "./App"; // Desktop view
 
-const App = () => {
-  const [currentPage, setCurrentPage] = useState("aboutme");
+const Index = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
-  // Function to handle smooth scrolling
-  const handlePageChange = (page) => {
-    setCurrentPage(page);
-    document.getElementById(page)?.scrollIntoView({ behavior: "smooth" });
-  };
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
 
-  return (
-    <>
-      {/* Background Image Layer */}
-      <div
-        className="fixed inset-0 z-0 bg-cover bg-center opacity-10"
-        style={{ backgroundImage: `url(${Bgimage})` }}
-      ></div>
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
-      {/* Main Content with Positive z-index */}
-      <div className="relative z-10 flex flex-row">
-        {/* Sticky Intro Component */}
-        <div className="sticky top-0 h-[800px]">
-          <Intro />
-        </div>
+  console.log(process.env.REACT_APP_SERVICE_KEY);
 
-        {/* Page Sections */}
-        <div className="flex flex-col">
-          <div id="aboutme" className="h-[750px] w-[900px]">
-            <Aboutme mywork={handlePageChange} />
-          </div>
-          <div id="work" className="h-[750px] w-[900px]">
-            <Work />
-          </div>
-          <div id="tools" className="h-[450px] w-[900px]">
-            <Tools />
-          </div>
-          <div id="profile" className="h-[750px] w-[900px]">
-            <Profile />
-          </div>
-          <div id="testimonial" className="h-[500px] w-[900px]">
-            <Testimonial />
-          </div>
-          <div id="talk" className="h-[800px] w-[900px]">
-            <Talk />
-          </div>
-        </div>
-
-        {/* Navbar with Scrolling Handler */}
-        <div className="sticky top-0 h-[800px]">
-          <Navbar setCurrentPage={handlePageChange} />
-        </div>
-      </div>
-
-      <Footer />
-    </>
-  );
+  return isMobile ? <Test /> : <App />;
 };
 
 // Render to the DOM
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+root.render(<Index />);

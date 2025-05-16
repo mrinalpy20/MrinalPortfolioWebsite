@@ -4,14 +4,20 @@ import DescText from "./description_text";
 
 function ProjectBox(props) {
   return (
-    <div className="w-[75%] h-[100%] relative bg-[#2c2d2f] rounded-[20px] overflow-hidden group">
+    <div
+      className={`${
+        props.w || "w-[75%]"
+      } h-[100%]  bg-[#2c2d2f] rounded-[20px] overflow-hidden group`}
+    >
       {/* Image Container with Zoom Effect */}
       <div className="h-[69%] w-[100%] overflow-hidden">
-        <img
-          className="h-[90%] w-[100%] transition-transform duration-500 ease-out group-hover:scale-105"
-          src={props.image}
-          alt="project"
-        />
+        <a href={props.url} target="_blank" rel="noopener noreferrer">
+          <img
+            className="h-[90%] w-[100%] transition-transform duration-500 ease-out group-hover:scale-105"
+            src={props.image}
+            alt="project"
+          />
+        </a>
       </div>
 
       <div className="h-[29%] flex flex-col">

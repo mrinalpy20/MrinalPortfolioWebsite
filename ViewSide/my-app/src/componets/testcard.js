@@ -5,7 +5,7 @@ import DescText from "../componets/description_text";
 
 function TestCard(props) {
   return (
-    <div className="test-card  w-[705px] h-[240px]  flex flex-col bg-[#2c2d2f] rounded-xl  overflow-hidden">
+    <div className="w-[705px] h-[240px]  flex flex-col bg-[#2c2d2f] rounded-xl  overflow-hidden">
       <div className=" h-[7%]"></div>
       <div className="  h-[35%] flex flex-row">
         <div className="w-[3%]"></div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ".././output.css";
 import HeaderText from "../componets/headertext";
 import DescText from "../componets/description_text";
@@ -6,10 +6,15 @@ import Button from "../componets/button";
 import LogoSvg from "../componets/logo";
 import Logo from "../Assets/Logos/vector.png";
 import M from "../Assets/Logos/union.png";
-
+import MailBox from "../componets/mail";
 function Aboutme(props) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openModal = () => setIsOpen(true);
+  const closeModal = () => setIsOpen(false);
+
   return (
-    <div className="w-[705px] h-[450px] ml-[40px] mt-[45px] flex flex-col">
+    <div className="max-w-[705px] min-w-[360px] h-[450px] ml-[40px] mt-[45px] flex flex-col">
       <div>
         <HeaderText
           w="90%"
@@ -32,7 +37,7 @@ function Aboutme(props) {
           textSize="text-xl"
         />
       </div>
-      <div className="flex flex-row mt-[5%]">
+      <div className="flex flex-row mt-[5%] justify-between">
         <div>
           <HeaderText
             w="30%"
@@ -44,7 +49,9 @@ function Aboutme(props) {
             marginTop="20px"
           />
           <div className="h-3"></div>
-          <DescText text="MONTHS OF EXPERIENCE" w="50%" textAlign="left" />
+          <div className="w-[130px]">
+            <DescText text="MONTHS OF EXPERIENCE" w="400px" textAlign="left" />
+          </div>
         </div>
         <div>
           <HeaderText
@@ -57,19 +64,29 @@ function Aboutme(props) {
             marginTop="20px"
           />
           <div className="h-3"></div>
-          <DescText text="PROJECTS COMPLETED" w="50%" textAlign="left" />
+          <div className="w-[130px]">
+            <DescText text="PROJECTS COMPLETED" w="50%" textAlign="left" />
+          </div>
         </div>
         <div>
           <div class="w-[30%] h-[50%] text-white text-3xl font-semibold font-['Outfit'] leading-none mt-2">
             B.Tech ECE
           </div>
           <div className="h-3"></div>
-          <DescText text="NIT SILCHAR 2024" w="70%" textAlign="left" />
+          <div className="w-[130px]">
+            <DescText text="NIT SILCHAR 2024" w="70%" textAlign="left" />
+          </div>
         </div>
       </div>
       <div className="mt-12 grid grid-cols-[1fr_1fr_1fr_1fr]">
         <div>
-          <Button text="Let's Talk" width="w-[210px]" color="bg-[#914BF1]" />
+          <Button
+            text="Let's Talk"
+            width="w-[210px]"
+            color="bg-[#914BF1]"
+            onClick={openModal}
+          />
+          {isOpen && <MailBox closeModal={closeModal} />}
         </div>
         <div>
           <button

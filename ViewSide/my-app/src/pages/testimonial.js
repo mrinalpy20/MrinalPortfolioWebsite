@@ -82,13 +82,13 @@ function Testimonial(props) {
         </div>
       </div>
       <div className="h-[5%]"></div>
-      <div className="relative w-[100%] overflow-hidden flex flex-row">
+      <div className="w-[100%] overflow-hidden flex flex-row">
         <div
-          className="flex flex-row transition-transform duration-1000 ease-in-out gap-0"
+          className="flex flex-row transition-transform duration-1000 ease-in-out z-[-1]"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
           {cards.map((card, index) => (
-            <div key={index} className="w-full flex-shrink-0">
+            <div key={index} className="w-full flex-shrink-0  ">
               <TestCard text={card.text} content={card.content} />
             </div>
           ))}

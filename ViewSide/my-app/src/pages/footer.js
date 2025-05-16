@@ -11,15 +11,19 @@ function Footer(props) {
       <div className="h-[8%]"></div>
       <div className="w-[100%] h-[30%] flex flex-row justify-center items-center">
         <div className="w-[7%] h-[100%]  flex justify-center items-center">
-          Software
+          <a href="https://drive.google.com/file/d/1tJ_18sNaUg1ITtshAG1YeYVHJaVuwm2L/view?usp=drive_link">
+            Software
+          </a>
         </div>
         <div className="w-1 h-[70%] bg-purple-500"></div>
         <div className="w-[7%] h-[100%]  flex justify-center items-center">
-          Analytics
+          <a href="https://drive.google.com/file/d/1dhugY8pYYoFUrOrlnaPmx_Zw2BKpF0lp/view?usp=drive_link">
+            Analytics
+          </a>
         </div>
         <div className="w-1 h-[70%] bg-purple-500"></div>
         <div className="w-[6%] h-[100%]  flex justify-center items-center">
-          Design
+          <a href="https://www.behance.net/mrinalkalita1">Design</a>
         </div>
       </div>
     </div>

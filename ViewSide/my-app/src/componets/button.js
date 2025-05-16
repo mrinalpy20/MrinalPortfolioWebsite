@@ -4,6 +4,7 @@ import ".././output.css";
 function Button(props) {
   return (
     <button
+      type={props.type}
       className={`text-lg font-medium h-[50px]  ${
         props.width || "w-[154px]"
       } rounded-lg flex justify-center items-center ${props.color} mt-${
