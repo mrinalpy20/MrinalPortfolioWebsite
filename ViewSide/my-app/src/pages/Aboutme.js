@@ -44,13 +44,13 @@ function Aboutme(props) {
             h="40%"
             textsize="4.5rem"
             position="left"
-            line1="+3"
+            line1="+12"
             lastColor="#00000"
             marginTop="20px"
           />
           <div className="h-3"></div>
           <div className="w-[130px]">
-            <DescText text="MONTHS OF EXPERIENCE" w="400px" textAlign="left" />
+            <DescText text="YEARS OF EXPERIENCE" w="400px" textAlign="left" />
           </div>
         </div>
         <div>

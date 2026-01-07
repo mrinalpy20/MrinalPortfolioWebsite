@@ -48,12 +48,12 @@ function Aboutme(props) {
             h="auto"
             textsize="3rem"
             position="left"
-            line1="+3"
+            line1="+12"
             lastColor="#00000"
             marginTop="20px"
           />
           <DescText
-            text="MONTHS OF EXPERIENCE"
+            text="YEARS OF EXPERIENCE"
             w="80%"
             textAlign="left"
             textSize="text-md"
