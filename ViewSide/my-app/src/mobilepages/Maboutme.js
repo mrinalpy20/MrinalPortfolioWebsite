@@ -53,7 +53,7 @@ function Aboutme(props) {
             marginTop="20px"
           />
           <DescText
-            text="YEARS OF EXPERIENCE"
+            text="MONTHS OF EXPERIENCE"
             w="80%"
             textAlign="left"
             textSize="text-md"

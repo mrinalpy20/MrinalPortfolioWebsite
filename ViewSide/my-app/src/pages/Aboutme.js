@@ -50,7 +50,7 @@ function Aboutme(props) {
           />
           <div className="h-3"></div>
           <div className="w-[130px]">
-            <DescText text="YEARS OF EXPERIENCE" w="400px" textAlign="left" />
+            <DescText text="MONTHS OF EXPERIENCE" w="400px" textAlign="left" />
           </div>
         </div>
         <div>
