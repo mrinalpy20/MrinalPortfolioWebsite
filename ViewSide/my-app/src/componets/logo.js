@@ -1,6 +1,5 @@
 import React from "react";
 import ".././output.css";
-import Logo from "../Assets/Logos/vector.png";
 
 function LogoSvg(props) {
   return (

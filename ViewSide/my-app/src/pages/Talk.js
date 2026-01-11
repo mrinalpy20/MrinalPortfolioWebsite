@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import ".././output.css";
 import TalkCard from "../componets/letstalk";
 import SubHeaderText from "../componets/subHeader";

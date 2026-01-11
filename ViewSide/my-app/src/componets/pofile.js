@@ -1,7 +1,6 @@
 import React from "react";
 import ".././output.css";
 import SubHeaderText from "../componets/subHeader";
-import DescText from "../componets/description_text";
 import ProjectBox from "../componets/projectbox";
 import Behance from "../Assets/Images/Behance.png";
 import Leetcode from "../Assets/Images/Leetcode.jpg";

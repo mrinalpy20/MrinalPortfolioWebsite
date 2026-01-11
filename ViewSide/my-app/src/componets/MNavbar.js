@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import ".././output.css";
 import { Home, FolderInput, Wrench, Briefcase, Star, Mail } from "lucide-react";
 

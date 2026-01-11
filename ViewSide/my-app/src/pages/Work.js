@@ -1,7 +1,6 @@
 import React from "react";
 import ".././output.css";
 import SubHeaderText from "../componets/subHeader";
-import DescText from "../componets/description_text";
 import ProjectBox from "../componets/projectbox";
 import Natous from "../Assets/Images/Natours.jpg";
 import Heartify from "../Assets/Images/Heartify.jpg";

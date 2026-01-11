@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import ReactDOM from "react-dom/client";
+import React from "react";
 import "./index.css";
 import Intro from "./pages/intro";
 import Aboutme from "./pages/Aboutme";
@@ -9,16 +8,11 @@ import Testimonial from "./pages/testimonial";
 import Navbar from "./componets/Navbar";
 import Talk from "./pages/Talk";
 import Footer from "./pages/footer";
-import Bgimage from "./Assets/Images/image.jpg";
 import Profile from "./componets/pofile";
-import MailBox from "./componets/mail";
 
 const App = () => {
-  const [currentPage, setCurrentPage] = useState("aboutme");
-
   // Function to handle smooth scrolling
   const handlePageChange = (page) => {
-    setCurrentPage(page);
     document.getElementById(page)?.scrollIntoView({ behavior: "smooth" });
   };
 
