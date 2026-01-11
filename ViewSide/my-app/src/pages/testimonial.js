@@ -2,33 +2,42 @@ import React, { useRef, useState } from "react";
 import ".././output.css";
 import SubHeaderText from "../componets/subHeader";
 import TestCard from "../componets/testcard";
-
+import Mainur from "../Assets/Images/Mainur.jpg";
+import Manish from "../Assets/Images/Manish.jpg";
+import Suman from "../Assets/Images/Suman.jpg";
+import Niraj from "../Assets/Images/Niraj.jpg";
+import Mahadeva from "../Assets/Images/Mahadeva.jpg";
 function Testimonial(props) {
   const cards = [
     {
       text: "Mainur Islam Ahmed",
       content:
         "Working with Mrinal has been a pleasure. His dedication and attention to detail are impressive.",
+      profilePic: Mainur,
     },
     {
       text: "Suman Goswami",
       content:
         "Mrinal consistently delivers high-quality work, even under tight deadlines. A true professional!",
+      profilePic: Suman,
     },
     {
       text: "Manish",
       content:
         "Mrinal's problem-solving skills are exceptional. He always finds effective solutions to complex challenges.",
+      profilePic: Manish,
     },
     {
       text: "Niraj Patil",
       content:
         "A reliable team member, Mrinal brings creativity and innovation to every project.",
+      profilePic: Niraj,
     },
     {
       text: "Mahadeva B R",
       content:
         "I appreciate Mrinal's collaborative spirit and his ability to inspire those around him.",
+      profilePic: Mahadeva,
     },
   ];
 
@@ -89,7 +98,11 @@ function Testimonial(props) {
         >
           {cards.map((card, index) => (
             <div key={index} className="w-full flex-shrink-0  ">
-              <TestCard text={card.text} content={card.content} />
+              <TestCard
+                text={card.text}
+                content={card.content}
+                profilePic={card.profilePic}
+              />
             </div>
           ))}
         </div>

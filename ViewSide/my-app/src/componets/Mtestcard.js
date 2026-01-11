@@ -1,6 +1,6 @@
 import React from "react";
 import ".././output.css";
-import profilePic from ".././Assets/Images/profile.jpg";
+// import profilePic from ".././Assets/Images/profile.jpg";
 import DescText from "./description_text";
 
 function TestCard(props) {
@@ -12,7 +12,7 @@ function TestCard(props) {
         <div className="  w-[15%] flex items-center justify-center">
           <div className="w-[100%] h-[75%]  rounded-full overflow-hidden">
             <img
-              src={profilePic}
+              src={props.profilePic}
               alt=""
               className="w-full h-full object-cover"
             />
