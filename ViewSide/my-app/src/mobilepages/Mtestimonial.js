@@ -6,27 +6,27 @@ import TestCard from "../componets/Mtestcard";
 function Testimonial(props) {
   const cards = [
     {
-      text: "Roman Reigns",
+      text: "Mainur Islam Ahmed",
       content:
         "Working with Mrinal has been a pleasure. His dedication and attention to detail are impressive.",
     },
     {
-      text: "John Cena",
+      text: "Suman Goswami",
       content:
         "Mrinal consistently delivers high-quality work, even under tight deadlines. A true professional!",
     },
     {
-      text: "Ravi Shastri ",
+      text: "Manish",
       content:
         "Mrinal's problem-solving skills are exceptional. He always finds effective solutions to complex challenges.",
     },
     {
-      text: "Sananath Jaysurya",
+      text: "Niraj Patil",
       content:
         "A reliable team member, Mrinal brings creativity and innovation to every project.",
     },
     {
-      text: "Seth Rollins",
+      text: "Mahadeva B R",
       content:
         "I appreciate Mrinal's collaborative spirit and his ability to inspire those around him.",
     },
