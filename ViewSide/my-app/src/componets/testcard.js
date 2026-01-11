@@ -19,7 +19,7 @@ function TestCard(props) {
           </div>
         </div>
         <div className="w-[2%]"></div>
-        <div class="w-[40%] text-white text-2xl font-medium font-['Outfit'] leading-7 flex items-center justify-left">
+        <div className="w-[40%] text-white text-2xl font-medium font-['Outfit'] leading-7 flex items-center justify-left">
           {props.text}
         </div>
       </div>

@@ -69,7 +69,7 @@ function Aboutme(props) {
           </div>
         </div>
         <div>
-          <div class="w-[30%] h-[50%] text-white text-3xl font-semibold font-['Outfit'] leading-none mt-2">
+          <div className="w-[30%] h-[50%] text-white text-3xl font-semibold font-['Outfit'] leading-none mt-2">
             B.Tech ECE
           </div>
           <div className="h-3"></div>
